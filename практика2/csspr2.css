@@ -1,0 +1,30 @@
+body {
+	margin: 0px 30px; /* внутренние отступы элемента */.
+}
+
+*{
+	font-family: Arial;
+	font-size: 16px;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 36px; /* Размер шрифта */ 
+	text-align: left;
+
+} 
+
+h2 {
+	font-family: Arial;
+	font-size: 24px; /* Размер шрифта */ 
+	text-align: left;
+
+}
+p{
+	text-align: left;
+}
+
+p[target="italic"]{
+  font-style: italic ;
+  text-align: right;
+}
