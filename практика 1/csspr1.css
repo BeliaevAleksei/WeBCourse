@@ -1,0 +1,39 @@
+body {
+  margin: 0px 30px; /* внутренние отступы элемента */.
+}
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 36px; /* Размер шрифта */ 
+  text-align: center;
+} 
+
+h2 {
+	font-family: 'Noto Sans', sans-serif;
+  font-size: 24px; /* Размер шрифта */ 
+  text-align: center;
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.5;
+  text-indent: 40px;
+  margin-bottom: -15px; /*!!!!
+  форматирование без дополнительных отступов в начале и конце абзаца(тут так можно?)!!!!*/
+  text-align: justify;
+}
+
+p[target="italic"]{
+  font-style: italic ;
+  text-align: right;
+}
+
+#lev {
+  float: left; /* задает выравнивание элемента */
+  margin-right: 15px;
+}
