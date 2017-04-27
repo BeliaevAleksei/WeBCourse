@@ -34,7 +34,7 @@
    					 	echo "<div class=\"main-text-content\">";
    					 	$row = mysqli_fetch_row($result);
    					 	echo "<a href=\"#\"><h2> $row[1] </h2></a>";
-   					 	echo "<p>$row[2]</p> </br>";
+   					 	echo "<p>$row[3]</p> </br>";
    					 	echo "<div class=\"clearbox\"> </div> </div>";
    					 }
    					mysqli_free_result($result);

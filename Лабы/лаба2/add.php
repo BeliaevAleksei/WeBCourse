@@ -36,7 +36,7 @@
 					echo "Вы не согласились на обработку персональных данных";
 					echo "</br>";
 				}
-				if(empty($login) or empty($password) or empty($message) or empty($email)){
+				elseif(empty($login) or empty($password) or empty($message) or empty($email)){
 					echo "Данные не могут быть пустыми";
 					echo "</br>";
 				}
@@ -44,15 +44,7 @@
 					$sql = "INSERT INTO Message (login, password, email, message) VALUES ('".$login."', '".$password."', '".$email."', '".$message."')";
 				}
 				if(mysql_query($sql)){
-					echo "Письмо отправлено, вы верентесь назад через 5секунд";
-				//sleep(5);
-					$back = $_SERVER['HTTP_REFERER'];
-					echo "
-					<html>
-					<head>
-						<meta http-equiv='Refresh' content='0; URL=".$_SERVER['HTTP_REFERER']."'>
-					</head>
-					</html>";
+					echo "Письмо отправлено";
 				}
 				else {
 					echo "Письмо не отправлено";
