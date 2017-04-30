@@ -1,0 +1,335 @@
+
+@media (min-width: 1024px) {   
+	body
+	{
+		background: url(../img/fon1920.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.main-text-content > img {
+		width: 49%;
+		height: 300px;
+		display: inline-block;
+	}
+	a{
+		font-size: 1.2em; 
+	}
+	p{
+		font-size: 1.2em; 
+	}
+
+	h3{
+		font-size: 1.9em; 
+	}
+	h2{
+		font-size: 1.3em; 
+	}
+		.righttable{
+		width: 26%;
+		float: right;
+	}
+	.lefttable{
+		width: 26%;
+		float: left;
+	}
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+
+	body {  
+		background: url(../img/fon1024.jpg);   
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+
+	} 
+	.main-text-content > img {
+		/*width: 400px;*/
+		width: 40%;
+		height: 300px;
+		display: inline-block;
+	}
+	a{
+		font-size: 1.0em; 
+	}
+	p{
+		font-size: 1.0em; 
+	}
+
+	h3{
+		font-size: 1.5em; 
+	}
+	h2{
+		font-size: 1.1em; 
+	}
+		.righttable{
+		width: 26%;
+		float: right;
+	}
+	.lefttable{
+		width: 26%;
+		float: left;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 719px)  
+{
+	body {  
+		background: url(../img/fon720.jpg);   
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+	} 
+	.main-text-content > img {
+		/*width: 274px;*/
+		width: 30%;
+		height: 300px;
+		display: inline-block;
+	}
+	a{
+		font-size: 0.7em; 
+	}
+	p{
+		font-size: 0.7em; 
+	}
+
+	h3{
+		font-size: 1.2em; 
+	}
+	h2{
+		font-size: 0.8em; 
+	}
+		.righttable{
+		width: 26%;
+		float: right;
+	}
+	.lefttable{
+		width: 26%;
+		float: left;
+	}
+}
+@media (min-width: 320px) and (max-width: 479px)
+{   
+	body {  
+		background: url(../img/fon480.jpg);   
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+	} 
+	.main-text-content > img {
+		/*width: 173px;*/
+		width: 20%;
+		height: 200px;;
+		display: inline-block;
+	}
+	a{
+		font-size: 0.7em; 
+	}
+	p{
+		font-size: 0.7em; 
+	}
+
+	h3{
+		font-size: 1.2em; 
+	}
+	h2{
+		font-size: 0.8em; 
+	}
+	.righttable{
+		width: 26%;
+		float: right;
+	}
+	.lefttable{
+		width: 26%;
+		float: left;
+	}
+}
+@media (max-width: 319px)
+{
+	body {  
+
+		background: url(../img/fon320.jpg);   
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+	} 
+	.main-text-content > img {
+		width: 172px;
+		height: 110px;
+		display: inline-block;
+	}
+	a{
+		font-size: 0.7em; 
+	}
+	p{
+		font-size: 0.7em; 
+	}
+
+	h3{
+		font-size: 1.0em; 
+	}
+	h2{
+		font-size: 0.8em; 
+	}
+	.righttable{
+		width: 100%;
+		float: none;
+	}
+	.lefttable{
+		width: 100%;
+		float: none;
+	}
+}
+
+.page {
+	width: 60%; /* Ширина элемента в пикселах */
+	margin: auto; /* Выравниваем по центру */
+	position: relative;
+}
+input{
+	border-radius: 5px;
+	background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+	/*background: -moz-linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);*/
+}
+
+
+form{
+	align-items: center;
+	text-align: center;
+	margin: 10% 0;
+}
+
+.header {
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	top: 0;
+	min-height: 60px;
+}
+
+.main {
+	line-height: 150px;
+	position: relative;
+}
+
+#navbar {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#navbar li { 
+	display: inline; 
+}
+
+#navbar {
+	margin: -8px;
+	padding: 0;
+	list-style-type: none;
+	border: 2px solid #000000;
+	border-radius: 0px 0px 20px 20px;
+	text-align: center;
+	background-color:#696969;
+}
+#navbar a {
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	width: 100px;
+}
+#navbar a:hover {
+	border-radius: 20px 5px;
+	background-color: #808080;
+}
+
+.main-text{
+	outline: 2px solid #000;
+	/*background-color:#696969;*/
+	background: -moz-linear-gradient(#778899, #EBFFFF);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#778899), to(#EBFFFF));
+	
+	margin:auto;
+}
+
+
+.main-text-content {
+	/*background-color: rgba(255, 255, 254, 0.96);*/
+	
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+	background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+	background-image: -webkit-linear-gradient([<угол> | <позиция> ,] <цвет> [, <цвет>]*);
+	border-radius: 10px;
+	margin:auto;
+}
+
+.main-text-content .clearbox {
+	display: table;
+}
+
+.main-text > h3 {
+	text-align: center;
+	color: #033E6B;
+	font-family: "Gabriela", TREBUCHET MS;
+	/*background-color: #FFFFFF;*/
+	background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+	border-radius: 5px;
+}
+
+.main-text-content > a {
+	display: block;
+	min-width: 20px;
+	background-color: #FFFFFF;
+	color: #033E6B;
+	font-family: "Gabriela", TREBUCHET MS;
+	border-bottom: 2px solid maroon; /* Параметры линии под текстом */
+	font-weight: normal; /* Убираем жирное начертание */
+	padding-bottom: 5px; /* Расстояние от текста до линии */
+	text-align: left;
+}
+
+
+.main-text-content > p {
+	display: block;
+	text-indent: 2em;
+	margin: 0 5px;
+	color: #033E6B;
+	border-radius: 5px;
+	line-height: 34px;
+}
+
+.main-text-content img {
+	margin-bottom: 10px;
+	-o-object-fit: cover;
+	object-fit: cover; /* способ встраивания содержимого в элемент */
+	object-position: center; /* способ размещения содержимого в элементе */
+}
+.main-text-content .clearbox {
+	display: table;
+	clear: both;
+}
+
+#imginf {
+	float: left; /* задает выравнивание элемента */
+	margin-right: 10px;
+}
+
+
+
+.lefttable{
+	display: table;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+.righttable{
+	display: table;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+#about{
+	width: 90%;
+}
