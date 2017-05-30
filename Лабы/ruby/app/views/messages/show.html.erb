@@ -1,0 +1,25 @@
+
+<h3><%= notice %></h3>
+<div class="main-text-content">
+<p>
+  <strong>Login:</strong>
+  <%= @message.login %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @message.password %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @message.email %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @message.message %>
+</p>
+</div>
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', new_message_path %>

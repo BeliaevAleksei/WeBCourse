@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+<h3><%= @news.name %></h3>
+<div class="main-text-content">
+  <%= @news.fullnews %>
+  </div>
+
+
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Back', news_index_path %>
