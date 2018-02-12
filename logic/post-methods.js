@@ -1,19 +1,38 @@
 var UPost = UPost || function(map, dom) {
-	this.stations = function(){
-        $(document).ready((e) =>
-        {
-            $.ajax({
-                type: 'GET',
-                url: 'http://localhost:8080/api/stations/list',
-                contentType: 'application/json',
-                success(data)
-                {
-                    console.log("post stations");
-                    map.set_station_list(data.stations);
-                    console.log("post stations after");
-                    dom.add_to_select();
-                }
-            });   
+	this.get_stations = function(){
+        var res;
+        $.ajax({
+            type: 'GET',
+            async: false,
+            url: '/api/stations/list',
+            contentType: 'application/json',
+            success(data)
+            {
+                res = data.stations;
+                console.log(res);
+            }
         });
+        return res
     }
+    this.set_route = function(output){
+        var res;
+        $.ajax({
+            type: 'POST',
+            async: false,
+            url: '/api/routes/find',
+            data: output,
+            success(data)
+            {
+                res = data;
+                console.log(res);
+            }
+
+        })
+        .always(function(data){
+            console.log(data);
+        });
+        return res
+    }
+
+
 }
